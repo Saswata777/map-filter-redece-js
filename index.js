@@ -61,6 +61,8 @@ console.log(binary_example3);
 
 
 // Filter Function
+// filter is a function that filters out the value from the array by satisfying a specific logic 
+
 console.log("Filter function");
 function isOdd(x){
         return x % 2;
@@ -72,3 +74,8 @@ function isEven(x){
 
 console.log("All odd elements",arr.filter(isOdd)); 
 console.log("All Even elements",arr.filter(isEven));
+
+// filter function also takes argments in various way like map function does
+// 1. passing function name as arguments and definig it outside
+// 2. Definig whole function in the place of arguments
+// 3. passing a arrow function 
