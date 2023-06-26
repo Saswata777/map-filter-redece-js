@@ -26,3 +26,18 @@ console.log(outputDouble, outputTripple, outputBinary);
 console.log(outputDouble);
 console.log(outputTripple);
 console.log(outputBinary);
+
+
+// Others way to write map function
+console.log("Others way to write map function");
+console.log("Defining whole fuction in the map function");
+
+const double_example2 = arr.map(function double(x){return x * 2} )
+
+const tripple_example2 = arr.map(function tripple(x){return x * 3} )
+
+const binary_example2 = arr.map(function binary(x){return x.toString(2)} )
+
+console.log(double_example2);
+console.log(tripple_example2);
+console.log(binary_example2);
