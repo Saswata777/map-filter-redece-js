@@ -163,6 +163,8 @@ const users = [
 console.log(users.map(x => x.firstName + " "+ x.lastName));
 // Here x represent objects which is iterate through map function
 
+
+// Reduce function over array of objects
 const ageCal =  users.reduce(function(acc, curr){
                     if(acc[curr.age]){
                             acc[curr.age] = ++acc[curr.age]; 
@@ -174,3 +176,17 @@ const ageCal =  users.reduce(function(acc, curr){
 },{});
 
 console.log(ageCal);
+
+
+
+// Filter function over array of objects
+
+function firstName_above26(users){
+        if(users.age>26){
+            return users.firstName;
+        }
+}
+
+
+// map filter reduce chain
+console.log(users.filter(x=> x.age>30 ).map(x=>x.firstName)); 
