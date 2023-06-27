@@ -115,3 +115,33 @@ const sum = arr.reduce(function(acc, curr){
 // curr act like current index in the array like arr[i]
 
 console.log(sum);
+
+
+console.log("Maximum element in the array");
+// using conventional function
+function maximum(arr){
+    let max = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        if(max<arr[i]){
+                max = arr[i];
+        }
+        
+    }
+    return max;
+}
+
+
+console.log(maximum(arr));
+
+
+// using reduce function
+
+const max_element = arr.reduce(function(acc, curr){
+    if(acc<curr){
+        acc= curr;
+    }
+    return acc;
+},0)
+
+console.log(max_element);
