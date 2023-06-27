@@ -145,3 +145,32 @@ const max_element = arr.reduce(function(acc, curr){
 },0)
 
 console.log(max_element);
+
+
+
+
+
+// using Map function over a array consist of objexts
+
+const users = [
+                {firstName:"Saswata", lastName:"Maitra", age:20},
+                {firstName:"Cristiano", lastName:"Ronaldo", age:38},
+                {firstName:"Lionel", lastName:"Messi", age:36},
+                {firstName:"Kylian mbappe", lastName:"Mbappe", age:20}
+        
+            ]
+
+console.log(users.map(x => x.firstName + " "+ x.lastName));
+// Here x represent objects which is iterate through map function
+
+const ageCal =  users.reduce(function(acc, curr){
+                    if(acc[curr.age]){
+                            acc[curr.age] = ++acc[curr.age]; 
+                    }
+                    else{
+                        acc[curr.age] = 1;
+                    }    
+                    return acc;
+},{});
+
+console.log(ageCal);
