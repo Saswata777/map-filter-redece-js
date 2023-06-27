@@ -79,3 +79,39 @@ console.log("All Even elements",arr.filter(isEven));
 // 1. passing function name as arguments and definig it outside
 // 2. Definig whole function in the place of arguments
 // 3. passing a arrow function 
+
+
+console.log("Reduce function");
+// Reduce Function
+// Note: Reduce function is not reduce any thing from the array
+// Redeuce  function takes all the elements from the array and it returns a single value from it
+// as per example   sum of all the elements, greatest of all the elements, minimum of all elements and so on
+
+
+// summing up all elements
+
+
+// iye hey aam zindegi
+console.log("Sum");
+function getSum(arr){
+    let sum = 0;
+    for(let i=0; i<arr.length; i++)
+    {
+        sum = sum + arr[i];
+    }
+    return sum;
+}
+
+console.log(getSum(arr));
+
+
+
+// iye hey mentos Zindegi
+const sum = arr.reduce(function(acc, curr){
+    return acc = acc + curr;
+}, 0/* Iniitialising the value of acc*/)
+
+// acc act like sum variable inside getSum function
+// curr act like current index in the array like arr[i]
+
+console.log(sum);
