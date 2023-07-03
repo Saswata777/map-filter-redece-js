@@ -72,8 +72,8 @@ function isEven(x){
     return x % 2 === 0;
 }
 
-console.log("All odd elements",arr.filter(isOdd)); 
-console.log("All Even elements",arr.filter(isEven));
+console.log("All odd elements",arr.filter(isOdd)); // It returns all the odd values in the array
+console.log("All Even elements",arr.filter(isEven)); // It returns all the even values in the array
 
 // filter function also takes argments in various way like map function does
 // 1. passing function name as arguments and definig it outside
@@ -91,7 +91,7 @@ console.log("Reduce function");
 // summing up all elements
 
 
-// iye hey aam zindegi
+// iye hey aam zindegi 
 console.log("Sum");
 function getSum(arr){
     let sum = 0;
