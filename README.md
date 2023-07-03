@@ -1,4 +1,4 @@
-# map-filter-redece-js
+# map-filter-reduce-js
 
 ## Map function 
 
